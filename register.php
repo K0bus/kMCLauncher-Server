@@ -24,6 +24,8 @@ session_start();
             $_SESSION['hash'] = $config['user']['hash'];
             $_SESSION['username'] = $config['user']['username'];
             file_put_contents('protected/config.json', json_encode($config));
+            mkdir('data');
+            mkdir('data/files');
             header('Location: index.php');
           }
           else
