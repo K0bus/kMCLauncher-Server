@@ -1,0 +1,37 @@
+.list-group-item
+{
+    background-color: #29434e;
+}
+.list-group-item .badge
+{
+    color: #fff;
+    background-color: #000a12;
+    padding: 8px; 
+}
+.list-group-item a.badge
+{
+    color: #fff;
+    background-color: #000a12;
+    padding: 8px;
+    border-radius: 0;
+}
+.list-group-item a.badge:hover
+{
+    background-color: #263238;
+}
+.list-group-item .badge-red
+{
+    border-left: 2px solid #e65100;
+}
+.list-group-item a.badge-red:hover
+{
+    background-color: #a30000;
+}
+.list-group-item .badge-orange
+{
+    border-left: 2px solid #ffa040;
+}
+.list-group-item a.badge-orange:hover
+{
+    background-color: #dd2c00;
+}

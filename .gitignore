@@ -1,0 +1,6 @@
+changelog.json
+content.json
+kMCUpdate-Server.code-workspace
+
+data/files/*
+protected/config.json
