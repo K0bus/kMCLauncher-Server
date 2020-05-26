@@ -29,7 +29,10 @@ class Files {
     }
     function getUpdateAdded()
     {
-        $json = json_decode(file_get_contents('content.json'), true);
+        if(file_exists('content.json'))
+            $json = json_decode(file_get_contents('content.json'), true);
+        else
+            $json = array('downloads' => array());
         $f = array();
         foreach($json['downloads'] as $v)
         {
@@ -39,7 +42,10 @@ class Files {
     }
     function getUpdateRemoved()
     {
-        $json = json_decode(file_get_contents('content.json'), true);
+        if(file_exists('content.json'))
+            $json = json_decode(file_get_contents('content.json'), true);
+        else
+            $json = array('downloads' => array());
         $f = array();
         foreach($json['downloads'] as $v)
         {
@@ -50,7 +56,10 @@ class Files {
     }
     function getUpdateEdited()
     {
-        $json = json_decode(file_get_contents('content.json'), true);
+        if(file_exists('content.json'))
+            $json = json_decode(file_get_contents('content.json'), true);
+        else
+            $json = array('downloads' => array());
         $f = array();
         foreach($json['downloads'] as $v)
         {
